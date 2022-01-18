@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+	<title>About Page</title>
+</head>
+<style>
+	 #main-footer
+    {
+      color: #FFFFFF;
+      font-family: "Segoe UI";
+      background: #2B2B2B;
+      text-align: center;
+      margin-top: 75px;
+      padding: 16px;
+      bottom: 8px;
+    }
+	
+    .img_holder img{
+        max-width: 100%; max-height: 100%;
+    }
+
+    .btn-file {
+    position: relative;
+    overflow: hidden;
+    }
+    .btn-file input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        min-width: 100%;
+        min-height: 100%;
+        font-size: 100px;
+        text-align: right;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        outline: none;
+        background: white;
+        cursor: inherit;
+        display: block;
+    }
+</style>
+<body class="bg_nav">
+
+	<header class="site-header">
+  <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+    <div class="container">
+      <a class="navbar-brand mr-4" href="/">PLANT LEAF DISEASE PREDICTION</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggle">
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link" href="/">Home</a>
+          <a class="nav-item nav-link" href="/about">About</a>
+          <a class="nav-item nav-link" href="/Potato">Potato</a>
+          <a class="nav-item nav-link" href="/Pepper">Pepper</a>
+          <a class="nav-item nav-link" href="/Rice">Rice</a>
+
+        </div>
+    </div>
+  </nav>
+</header>
+
+	<div class="container">
+		<h1>Details : </h1>
+    <h3>Leaf Disease Prediction application based on deep neural networks.</h3>
+    <p>The prediction about the leaf disease is made with the help of the neural networks which itself is trained on the thousands of the datasets</p>
+    <p>Below are the types of plant diseases which is employed in this application.</p>
+    <h2>1. Potato </h2>
+    <p>Potatoes are an important vegetable crop grown in China and have produced the world's highest gross yield in recent years. Late blight (Phytophthora infestans) and early blight (Alternaria solani) are the most destructive foliage diseases for potato crops and cause major yield losses in most potato-growing areas worldwide.<br></p>
+    <div style="text-align: center; margin-top: 20px">
+       <img style="max-width: 600px" src="{{ url_for('static', filename='potato.jpg') }}"/>
+   </div>
+    <h3>Early Blight</h3>
+    <p>Signs of Early blight may include:</p>
+    <ul>
+      <li>Causes lesions on the leaves which often have a target spot appearance of concentric rings</li>
+      <li>Appear a few weeks after emergence and start as very small black or brown spots on lower leaves which then coalesce. 
+      </li>
+      <li>
+        Appears as circular or irregular and dark-brown to black spots.
+      </li>
+      <li>
+        Can occur in all stages of growth and development.
+      </li>
+    </ul>
+    <h3>Late Blight</h3>
+    <p>Signs of Late blight may include:</p>
+    <ul>
+      <li>Appears as pale-green or olive-green areas that grow rapidly to become brown-black, water-soaked, and oily looking</li>
+      <li>Leaves have large, dark brown blotches with a green gray edge; not confined by major leaf veins. 
+      </li>
+      <li>
+        Infections progress through leaflets and petioles, resulting in large sections of dry brown foliage.
+      </li>
+      <li>
+        Stem infections are firm and dark brown with a rounded edge.
+      </li>
+    </ul>
+<br>
+<hr>
+<br>
+
+<h2>2. Pepper</h2>
+<p>Pepper plants are a staple in most vegetable gardens. They’re easy to grow and add great flavor to countless dishes. Bacterial leaf spot is one of the more common infections in pepper plants.</p>
+<div style="text-align: center; margin-top: 20px">
+       <img style="max-width: 600px" src="{{ url_for('static', filename='pepper.jpg') }}"/>
+   </div>
+<h3>Bacterial Leaf spot</h3>
+    <p>Early symptoms show up as water-soaked lesions on leaves that can quickly change from green to dark brown and enlarge into spots that are up to 1/4 inch in diameter with slightly raised margins. Over time, these spots can dry up in less humid weather, which allows the damaged tissues to fall off, resulting in a tattered appearance on the affected leaves.Leaf spot is a bacteria, so it can be spread by touch, through seeds, or via soil. Use cleanly soil and watering practices to avoid splashing the leaves with soil or cross contaminating.</p>
+<br> 
+<hr>
+<br>
+
+<h2>3.Rice</h2>
+<p>Rice (Oryza sativa) is a principal cereal crop in the world. It is consumed by greater than half of the world's population as a staple food for energy source..<br>
+  </p>
+<div style="text-align: center; margin-top: 20px">
+       <img style="max-width: 600px" src="{{ url_for('static', filename='rice.jpg') }}"/>
+   </div>
+<h3>LeafBlast</h3>
+ <ul>
+  <li>Blast is caused by the fungus Magnaporthe oryzae. It can affect all above ground parts of a rice plant: leaf, collar, node, neck, parts of panicle, and sometimes leaf sheath.</li>
+  <li>It occurs in areas with low soil moisture, frequent and prolonged periods of rain shower, and cool temperature in the daytime. In upland rice, large day-night temperature differences that cause dew formation on leaves and overall cooler temperatures favor the development of the disease.</li>
+  <li>Initial symptoms appear as white to gray-green lesions or spots, with dark green borders.</li>
+  <li>Older lesions on the leaves are elliptical or spindle-shaped and whitish to gray centers with red to brownish or necrotic border.</li>
+</ul>
+<h3>Hispa</h3>
+ <ul>
+  <li>Scraping of the upper surface of the leaf blade leaving only the lower epidermis as white streaks parallel to the midrib.</li>
+  <li>Irregular translucent white patches that are parallel to the leaf veins caused by tunneling of larvae through leaf tissue causes.</li>
+  <li>White streaks of uneaten lower epidermis between the parallel leaf veins.</li>
+  <li>elongated, clear feeding marks.</li>
+</ul>
+</ul>
+<h3>Brown Spot</h3>
+ <ul>
+  <li>The disease can develop in areas with high relative humidity (86−100%) and temperature between 16 and 36°C.</li>
+  <li>Infected seedlings have small, circular, yellow brown or brown lesions that may girdle the coleoptile and distort primary and secondary leaves.</li>
+  <li>Starting at tillering stage, lesions can be observed on the leaves. They are initially small, circular, and dark brown to purple-brown.</li>
+  <li>Fully developed lesions are circular to oval with a light brown to gray center, surrounded by a reddish brown margin caused by the toxin produced by the fungi.</li>
+</ul>
+<br> 
+<hr>
+<br>
+
+<br>
+<hr>
+<h3>How is Machine and Deep Learning Models are employed in the agricultural field ?</h3>
+<p>Find out ! </p>
+<br>
+<div style="text-align: center; margin-top: 20px">
+    <iframe src="https://www.youtube.com/embed/LRq0wqt7b7E" width="853" height="480" frameborder="0" allowfullscreen></iframe>
+  </div>
+	</div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<footer id="main-footer">
+      Copyright &copy; 2022
+    </footer>
+</body>
+</html>
