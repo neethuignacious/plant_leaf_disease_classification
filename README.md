@@ -4,7 +4,7 @@ Owing to changing climatic conditions, crops often get affected, because of whic
 
 Plant Disease Detection is one of the major issues that exits when we talk about using Technology in Agriculture. This application shows how neural networks can be used for plant disease recognition in the context of image classification.
 
-Applications
+## Applications :
 
 • To build an automatic system for leaf disease detection as the disease can not solely be detected by naked eye.
 
@@ -14,8 +14,15 @@ Applications
 
 • To extend the role of the technology in the agriculture field.
 
-Datasets
+## Datasets:
 
-https://www.kaggle.com/emmarex/plantdisease
+The dataset is obtained from Kaggle.
 
-https://www.kaggle.com/shayanriyaz/riceleafs
+link: https://www.kaggle.com/emmarex/plantdisease
+
+link: https://www.kaggle.com/shayanriyaz/riceleafs
+
+## Deployemnt :
+The web app has been build using basic HTML, CSS, Javascript and Flask.
+
+![ML](static/deployment.JPG)
